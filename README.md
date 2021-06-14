@@ -1,13 +1,15 @@
 # AIFFEL-FREESIA / Model
 
-### 👩‍🔬 프로젝트 실험 참여자
+## 👩‍🔬 프로젝트 실험 참여자
 - 이용복([stereo-weld](https://github.com/stereo-weld))
 - 정수희([suheeeee](https://github.com/suheeeee))
 - 정혜미([JungHam](https://github.com/JungHam))
 - 허운정([carrot2orange](https://github.com/carrot2orange))
 - 홍세현([hongse0331](https://github.com/hongse0331))
 
-### 📑 프로젝트 실험 기록
+<br>
+
+## 📑 프로젝트 실험 기록
 
 다음 항목들을 포함합니다
 - 실험에 사용된 데이터셋 생성
@@ -35,3 +37,29 @@
 | E17 | Unet(256,256) Road |  | 허운정 | LV2 |
 | E18 | Unet_Multiclass | 0.5655, 0.6922 | 정수희 | LV2 |
 | E19 | Unet_Concatenate_Models | 0.5974, 0.7255 | 정수희 | LV2 |
+
+<br>
+
+## ⛰ 프로젝트 실험별 목표
+| 번호 | 목표 |
+|:---:|:----|
+| E1  | (1024x1024x3)->(256x256x3) resizing을 적용한 buildiing segmentation |
+| E2  | (1024x1024x3)->(256x256x3) resizing을 적용한 road segmentation |
+| E3  | (1024x1024x3)->(25x256x256x3) crop(sliding window)를 적용한 buildiing segmentation,<br>최적 learning rate + opitmizer 탐색 |
+| E4  | E1 기반, model(Unet, Linknet, FPN) 별 building segmentation 성능 차이 확인 |
+| E5  | (1024x1024x3)->(9x512x512x3)->(9x256x256x3) resizing과 crop을 적용한 buildiing segmentation |
+| E6  | CLAHE 적용시 clip_limit에 따른 성능 차이 확인 |
+| E7  | E3 기반, TIFF 데이터를 활용한 buildiing segmentation |
+| E8  | (1024x1024x3)->(25x256x256x3) random crop을 적용한 buildiing segmentation,<br>최적 learning rate + opitmizer 탐색 |
+| E9  | (1024x1024x3)->(25x256x256x3) crop(sliding window)를 적용한 road segmentation |
+| E10 | E9 기반, PNG+OSM 데이터를 활용한 road segmentation |
+| E11 | road segmentation, 데이터셋 구성(채널:R,G,B,NIR,OMS/threshold)에 따른 성능 차이 확인 |
+| E12 | 특이치가 제거된 데이터셋을 활용한 building segmentation |
+| E13 | E1 기반, backborn(mobilenet, mobilenet2, efficientnetb3) 별 building segmentation 성능 차이 확인 |
+| E14 | E9 기반, model(Unet, Linknet, FPN) 별 building segmentation 성능 차이 확인 |
+| E15 |  |
+| E16 | E7 기반, 특이치 제거를 위한 필터링 방식에 따른 building segmentation 성능 차이 확인 |
+| E17 |  |
+| E18 | sementic segmentation multiclass model 테스트 |
+| E19 | E16. E11을 합쳐 하나의 multiclass segmentation 모델을 정의, <br>기존에 학습된 weight를 모델에 불러와 inference의 정상 동작 구현 |
+
