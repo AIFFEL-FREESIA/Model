@@ -1,6 +1,14 @@
 # AIFFEL-FREESIA / Model
 
-## 👩‍🔬 프로젝트 실험 참여자
+## 🏁 Task
+`Satellite Image Semantic Segmentation`
+- LV1 : Budiling, Road 개별 검출
+- LV2 : Building + Road 동시 검출
+
+
+<br>
+
+## 👩‍🔬 프로젝트 참여자
 - 이용복([stereo-weld](https://github.com/stereo-weld))
 - 정수희([suheeeee](https://github.com/suheeeee))
 - 정혜미([JungHam](https://github.com/JungHam))
