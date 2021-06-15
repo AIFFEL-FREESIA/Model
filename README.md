@@ -42,7 +42,7 @@
 | E14 | Unet빌딩(256,256)crop | 0.7060, 0.7832 | 허운정 | LV1-Building |
 | E15 | E15-one model, unet(256,256),  random crop, limited area |  | 이용복 | LV2 |
 | E16 | Unet(256,256) RandomCrop+Threshold | 0.7784, 0.8702 | 정수희 | LV2 |
-| E17 | Unet(256,256) Road |  | 허운정 | LV2 |
+| E17 | Unet(256,256) Road |  | 허운정 | LV1-Road |
 | E18 | Unet_Multiclass | 0.5655, 0.6922 | 정수희 | LV2 |
 | E19 | Unet_Concatenate_Models | 0.5974, 0.7255 | 정수희 | LV2 |
 
