@@ -67,7 +67,7 @@
 | E14 | E9 기반, model(Unet, Linknet, FPN) 별 building segmentation 성능 차이 확인 |
 | E15 |  |
 | E16 | E7 기반, 특이치 제거를 위한 필터링 방식에 따른 building segmentation 성능 차이 확인 |
-| E17 |  |
+| E17 |  road segmentation, 데이터셋 구성(채널:R,G,B,NIR,OMS/threshold)에 따른 성능 차이 확인|
 | E18 | sementic segmentation multiclass model 테스트 |
 | E19 | E16. E11을 합쳐 하나의 multiclass segmentation 모델을 정의, <br>기존에 학습된 weight를 모델에 불러와 inference의 정상 동작 구현 |
 
