@@ -45,6 +45,8 @@
 | E17 | Unet(256,256) Road | 0.4969, 0.6407 | 허운정 | LV1-Road |
 | E18 | Unet_Multiclass | 0.5655, 0.6922 | 정수희 | LV2 |
 | E19 | Unet_Concatenate_Models | 0.5974, 0.7255 | 정수희 | LV2 |
+| E23 | E1 재실험 | 0.6375 , 0.7761 | 정수희 | LV1-Building |
+| E24 | E2 재실험 | 0.5022, 0.6657 | 정수희 | LV1-Road |
 
 <br>
 
@@ -70,4 +72,5 @@
 | E17 |  road segmentation, 데이터셋 구성(채널:R,G,B,NIR,OMS/threshold)에 따른 성능 차이 확인|
 | E18 | sementic segmentation multiclass model 테스트 |
 | E19 | E16. E11을 합쳐 하나의 multiclass segmentation 모델을 정의, <br>기존에 학습된 weight를 모델에 불러와 inference의 정상 동작 구현 |
-
+| E23 | E1 재실험 | 
+| E24 | E2 재실험 |
